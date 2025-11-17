@@ -1,0 +1,49 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f09711;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e01156af;
+    color: white;
+}
+
+/* Profile section styling */
+.profile {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.671);
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.profile p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
