@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Article Comment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ::::::::: ARTICLE 1 ::::::::: -->
+    <h2>Article 1: Technology is Changing the World</h2>
+    <p style="color: black; font-size: large;">
+        Technology is rapidly advancing and affecting the way we work, communicate,
+        and live our lives every day.
+    </p>
+
+    <!-- STATISTICS 1 -->
+    <div class="stats-box">
+        <p>Total Comments: <span id="totalComments1">0</span></p>
+        <p>Average Rating: <span id="avgRating1">0</span></p>
+    </div>
+
+    <!-- COMMENT FORM 1 -->
+    <div class="comment-form ">
+        <h3>Leave a Comment</h3>
+
+        <label>Name:</label><br>
+        <input type="text" id="name1">
+        <small id="nameError1" class="error"></small><br>
+
+        <label>Email (Optional):</label><br>
+        <input type="text" id="email1">
+        <small id="emailError1" class="error"></small><br>
+
+        <label>Your Comment:</label><br>
+        <textarea id="comment1"></textarea>
+        <small id="commentError1" class="error"></small><br>
+
+        <!-- STARS -->
+        <label>Rating (Optional):</label>
+        <div class="stars" id="stars1">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <p>Selected Rating: <span id="selectedRating1">0</span></p>
+
+        <button onclick="submitComment(1)">Submit</button>
+    </div>
+
+    <!-- DISPLAY COMMENTS 1 -->
+    <div id="commentList1"></div>
+
+
+
+
+    <hr style="margin: 40px 0;">
+
+
+
+
+
+    <!-- ::::::::: ARTICLE 2 ::::::::: -->
+    <h2>Article 2: The Future of Artificial Intelligence</h2>
+    <p style="color: black; font-size: large;">
+        Artificial Intelligence is creating new possibilities every day,
+        transforming industries and making machines smarter.
+    </p>
+
+    <!-- STATISTICS 2 -->
+    <div class="stats-box">
+        <p>Total Comments: <span id="totalComments2">0</span></p>
+        <p>Average Rating: <span id="avgRating2">0</span></p>
+    </div>
+
+    <!-- COMMENT FORM 2 -->
+    <div class="comment-form">
+        <h3>Leave a Comment</h3>
+
+        <label>Name:</label><br>
+        <input type="text" id="name2">
+        <small id="nameError2" class="error"></small><br>
+
+        <label>Email (Optional):</label><br>
+        <input type="text" id="email2">
+        <small id="emailError2" class="error"></small><br>
+
+        <label>Your Comment:</label><br>
+        <textarea id="comment2"></textarea>
+        <small id="commentError2" class="error"></small><br>
+
+        <!-- STARS -->
+        <label>Rating (Optional):</label>
+        <div class="stars" id="stars2">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <p>Selected Rating: <span id="selectedRating2">0</span></p>
+
+        <button onclick="submitComment(2)">Submit</button>
+    </div>
+
+    <!-- DISPLAY COMMENTS 2 -->
+    <div id="commentList2"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
